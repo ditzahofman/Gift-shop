@@ -1,0 +1,27 @@
+<div class="box">
+    <form (ngSubmit)="send()" ngNativeValidate>
+        <h3>Add Gift</h3>
+        <label>Audience:</label>
+        <select name="audienceId" [(ngModel)]="gift.audienceId" required>
+            <option selected disabled value="">select audience</option>
+            <option *ngFor="let a of audience" value="{{a._id}}">{{a.name}}</option>
+        </select>
+
+        <label>Gift-name:</label>
+        <input type="text"  name="name" [(ngModel)]="gift.name" required>
+
+        <label>Description:</label>
+        <input type="text"  name="description" [(ngModel)]="gift.description" required>
+
+        <label>Price:</label>
+        <input type="number"  name="price" [(ngModel)]="gift.price" required>
+
+        <label>Units In Stock:</label>
+        <input type="number"  name="unitsInStock" [(ngModel)]="gift.unitsInStock" required>
+
+        <label>Discount:</label>
+        <input type="number"  name="discount" [(ngModel)]="gift.discount" required>
+        <button>Add</button>
+    </form>
+
+</div>

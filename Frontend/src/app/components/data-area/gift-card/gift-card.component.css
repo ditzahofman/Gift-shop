@@ -1,0 +1,106 @@
+/* .card {
+  background-color: #935c88;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+  margin: 2%;
+  width: 150px;
+  height: 150px;
+}
+  button{
+    position: absolute;
+left: 0%;
+top: 0%;
+   
+  }
+p{
+  font-size: medium;
+}
+  .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+
+  .card {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(10, 10, 11);
+    width: 150px;
+    height: 220px;
+   margin-right: 5px;
+  }
+
+   button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+   
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  }
+
+  .card button:focus {
+    outline: none;
+  }
+
+  .card .audience {
+    height: 20%;
+    border: 2px solid #f44336;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .card .name {
+    margin-top: 10px;
+    height: 20%;
+  }
+
+  .card .name p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .card .description {
+    margin-top: 10px;
+    height: 40%;
+  }
+
+  .card .price {
+    margin-top: 10px;
+    height: 10%;
+  }
+
+  .card .price b {
+    border: 2px solid #f44336;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .card .inStock {
+    margin-top: 10px;
+  }

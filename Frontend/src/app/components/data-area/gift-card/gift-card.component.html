@@ -1,0 +1,17 @@
+<div class="card">
+  <button (click)="deleteGift()" (click)="onDelete.emit()">✖️</button>
+  <div class=" audience">{{gift.audience.name}}</div>
+  <div class="name">
+    <p class="ellipsis"><b>{{gift.name}}</b></p>
+  </div>
+  <div class="description">
+    {{gift.description}}
+  </div>
+  <div class="price">
+    <b>{{gift.price | currency: 'ILS'}}</b>
+  </div>
+  <div class="inStock">
+    Units in stock:{{gift.unitsInStock}}
+    {{gift.discount}}
+  </div>
+</div>

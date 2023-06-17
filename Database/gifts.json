@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "6485a09c2bc5bb81093b0503"
+  },
+  "audienceId": {
+    "$oid": "64858cea0bc458fca8e2a9c1"
+  },
+  "name": "Hugs napkins",
+  "description": "Luxurious in spectacular colors",
+  "price": 150,
+  "discount": 10
+},{
+  "_id": {
+    "$oid": "6485a1122bc5bb81093b0505"
+  },
+  "audienceId": {
+    "$oid": "64858d250bc458fca8e2a9c2"
+  },
+  "name": "scooter",
+  "description": "Electric and careful",
+  "price": 300,
+  "discount": 20
+},{
+  "_id": {
+    "$oid": "6485a53f7ad84cdcc7f18595"
+  },
+  "audienceId": {
+    "$oid": "64858d430bc458fca8e2a9c3"
+  },
+  "name": "toy walker",
+  "description": "Amusing and stimulating walk",
+  "price": 250,
+  "discount": 10
+},{
+  "_id": {
+    "$oid": "6485d70f6cde443da8850d0f"
+  },
+  "audienceId": {
+    "$oid": "64858ccc0bc458fca8e2a9c0"
+  },
+  "name": "American dall",
+  "description": "Nice and big dall",
+  "price": 250,
+  "discount": 10
+},{
+  "_id": {
+    "$oid": "6486279e956ea013943833e0"
+  },
+  "audienceId": {
+    "$oid": "64858ccc0bc458fca8e2a9c0"
+  },
+  "name": "Bicycle",
+  "description": "Quality bikes don't break",
+  "price": 250,
+  "discount": 10
+},{
+  "_id": {
+    "$oid": "64862af4956ea013943833f3"
+  },
+  "audienceId": {
+    "$oid": "64858cea0bc458fca8e2a9c1"
+  },
+  "name": "Pen",
+  "description": "The best pen",
+  "price": 15,
+  "discount": 0
+}]

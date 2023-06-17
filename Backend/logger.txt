@@ -1,0 +1,20 @@
+11.6.2023, 13:16:29 	 Route /api/audience/64858ccc0bc458fca8e2a9c0 not exist
+----------------------------
+11.6.2023, 15:47:50 	 Route /api/gifts64858ccc0bc458fca8e2a9c0 not exist
+----------------------------
+11.6.2023, 15:47:55 	 Route /api/gifts64858d250bc458fca8e2a9c2 not exist
+----------------------------
+11.6.2023, 15:48:32 	 Route /api/gifts64858d430bc458fca8e2a9c3 not exist
+----------------------------
+11.6.2023, 15:51:17 	 Route /api/gifts64858ccc0bc458fca8e2a9c0 not exist
+----------------------------
+11.6.2023, 15:54:50 	 Route /api/gifts64858d430bc458fca8e2a9c3 not exist
+----------------------------
+11.6.2023, 22:43:55 	 GiftModel validation failed: discount: Missing discount
+----------------------------
+11.6.2023, 22:44:02 	 GiftModel validation failed: discount: Missing discount
+----------------------------
+11.6.2023, 22:44:41 	 GiftModel validation failed: discount: Missing discount
+----------------------------
+11.6.2023, 22:45:01 	 GiftModel validation failed: discount: Missing discount
+----------------------------

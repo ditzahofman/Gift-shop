@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "64858ccc0bc458fca8e2a9c0"
+  },
+  "name": "childrens"
+},{
+  "_id": {
+    "$oid": "64858cea0bc458fca8e2a9c1"
+  },
+  "name": "adult"
+},{
+  "_id": {
+    "$oid": "64858d250bc458fca8e2a9c2"
+  },
+  "name": "youth"
+},{
+  "_id": {
+    "$oid": "64858d430bc458fca8e2a9c3"
+  },
+  "name": "toddlers"
+}]

@@ -1,0 +1,10 @@
+input , label,button,select{
+    margin-bottom: 3%;
+    width: 90%;
+}
+form{
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 4%;
+}
