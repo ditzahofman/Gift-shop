@@ -1,27 +1,36 @@
-<div class="box">
+<div class="form-container">
     <form (ngSubmit)="send()" ngNativeValidate>
         <h3>Add Gift</h3>
         <label>Audience:</label>
-        <select name="audienceId" [(ngModel)]="gift.audienceId" required>
+        <select class="form-select" name="audienceId" [(ngModel)]="gift.audienceId" required>
             <option selected disabled value="">select audience</option>
             <option *ngFor="let a of audience" value="{{a._id}}">{{a.name}}</option>
         </select>
+        <div class="form-group">
+            <label class="form-label">Gift-name:</label>
+            <input class="form-input" type="text" name="name" [(ngModel)]="gift.name" required>
+        </div>
 
-        <label>Gift-name:</label>
-        <input type="text"  name="name" [(ngModel)]="gift.name" required>
+        <div class="form-group">
+            <label class="form-label">Description:</label>
+            <input class="form-input" type="text" name="description" [(ngModel)]="gift.description" required>
+        </div>
 
-        <label>Description:</label>
-        <input type="text"  name="description" [(ngModel)]="gift.description" required>
+        <div class="form-group">
+            <label class="form-label">Price:</label>
+            <input class="form-input" type="number" name="price" [(ngModel)]="gift.price" required>
+        </div>
 
-        <label>Price:</label>
-        <input type="number"  name="price" [(ngModel)]="gift.price" required>
+        <div class="form-group">
+            <label class="form-label">Units In Stock:</label>
+            <input class="form-input" type="number" name="unitsInStock" [(ngModel)]="gift.unitsInStock" required>
+        </div>
 
-        <label>Units In Stock:</label>
-        <input type="number"  name="unitsInStock" [(ngModel)]="gift.unitsInStock" required>
-
-        <label>Discount:</label>
-        <input type="number"  name="discount" [(ngModel)]="gift.discount" required>
-        <button>Add</button>
+        <div class="form-group">
+        <label class="form-label">Discount:</label>
+        <input class="form-input"type="number" name="discount" [(ngModel)]="gift.discount" required>
+    </div>
+        <button class="form-button">Add</button>
     </form>
 
 </div>

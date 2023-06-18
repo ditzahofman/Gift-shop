@@ -9,38 +9,47 @@ import { GiftService } from 'src/app/services/gifts.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-public audience:AudienceModel[] = []
-  public gifts: GiftModel[]=[]
+  public isTableView = true;
+  public audience: AudienceModel[] = []
+  public gifts: GiftModel[] = []
 
 
-public constructor(private giftsServices:GiftService){}
-  
-public async ngOnInit() {
-   try {
-    this.audience = await this.giftsServices.getAllAudience()
-   } catch (error:any) {
-    alert(error.message)
-   }
-}
+  public constructor(private giftsServices: GiftService) { }
 
-public async displayGifts(args:Event){
-  try {
-    const selectElement = args.target as HTMLSelectElement
-    const audienceId = selectElement.value 
-    this.gifts = await this.giftsServices.getGiftsByAudience(audienceId)
-  } catch (error:any) {
-    alert(error.message)
+  public async ngOnInit() {
+    try {
+      this.audience = await this.giftsServices.getAllAudience()
+    } catch (error: any) {
+      alert(error.message)
+    }
   }
 
+  public async displayGifts(args: Event) {
+    try {
+      const selectElement = args.target as HTMLSelectElement
+      const audienceId = selectElement.value
+      this.gifts = await this.giftsServices.getGiftsByAudience(audienceId)
+    } catch (error: any) {
+      alert(error.message)
+    }
 
-}
 
+  }
 
+  toggleView() {
+    this.isTableView = !this.isTableView;
+  }
 
-// Handle delete (from card)
-public handleDelete(_id: string):void {
-  this.gifts.splice(this.gifts.findIndex(e => e._id === _id), 1);
-}
+  public async deleteMe(_id: string) {
+    await this.giftsServices.deleteGift(_id)
+    const index = this.gifts.findIndex((g) => g._id === _id)
+    this.gifts.splice(index, 1)
+  }
+
+  // Handle delete (from card)
+  public handleDelete(_id: string): void {
+    this.gifts.splice(this.gifts.findIndex(e => e._id === _id), 1);
+  }
 
 
 }

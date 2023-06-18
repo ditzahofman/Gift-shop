@@ -1,0 +1,20 @@
+
+.background-container {
+    background-image: url("../../../../assets/gift-1420830_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .background-container h1{
+    position: absolute;
+    top: 20%;
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: 1px 5px 2px rgb(48, 133, 148);
+  }
+  

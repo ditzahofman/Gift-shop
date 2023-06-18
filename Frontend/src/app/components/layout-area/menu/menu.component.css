@@ -2,10 +2,17 @@ div{
     text-align: left;
     padding: 2%;
 }
-a {
+/* a {
     background-image: linear-gradient(to left, #ecece1, #544843, #121112, rgb(243, 233, 233));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: larger;
+    margin-right: 5%;
+  } */
+
+  a{
+color: azure;
     font-weight: bold;
     font-size: larger;
     margin-right: 5%;

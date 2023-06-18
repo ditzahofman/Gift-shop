@@ -7,6 +7,7 @@ export interface IGiftModel extends mongoose.Document{
     description:string
     price:number
     discount:number
+    unitsInStock:number
 }
 
 export const GiftSchema = new mongoose.Schema<IGiftModel>({
@@ -26,6 +27,10 @@ price:{
     required:[true , "Missing price"],
 },
 discount:{
+    type:Number,
+    required:[true , "Missing discount"]
+},
+unitsInStock:{
     type:Number,
     required:[true , "Missing discount"]
 }

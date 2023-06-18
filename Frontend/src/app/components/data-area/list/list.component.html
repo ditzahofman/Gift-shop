@@ -1,10 +1,37 @@
 <div >
-    <select (change)="displayGifts($event)" >
+    <select class="form-select" (change)="displayGifts($event)" >
 <option selected disabled value="">select audience</option>
     <option *ngFor="let a of audience" value = {{a._id}} >{{a.name}}</option>
 </select>
 <br>
-<div class="list">
+<br>
+<button (click)="toggleView()" title="{{ isTableView ? 'Switch to Card View' : 'Switch to Table View' }}">
+    <span *ngIf="isTableView">📄 Card mode </span>
+    <span *ngIf="!isTableView"> 📅Table mode</span>
+  </button>
+
+  <br/>
+
+<div *ngIf="isTableView">
+<table *ngIf="gifts.length>0" >
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Units in stock</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let g of gifts">
+        <td>{{g.name}}</td>
+        <td>{{g.description}}</td>
+        <td>{{g.price}}</td>
+        <td>{{g.unitsInStock}}</td>
+        <td><button (click)="deleteMe(g._id)"><b>x</b></button></td>
+    </tr>
+   
+</table>
+</div>
+<div class="list" *ngIf="!isTableView">
 <app-gift-card *ngFor="let g of gifts" [gift]="g" (onDelete)="handleDelete(g._id)"/>
 </div>
 </div>

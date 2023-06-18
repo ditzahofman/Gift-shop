@@ -1,32 +1,3 @@
-/* .card {
-  background-color: #935c88;
-  padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-bottom: 20px;
-  position: relative;
-  margin: 2%;
-  width: 150px;
-  height: 150px;
-}
-  button{
-    position: absolute;
-left: 0%;
-top: 0%;
-   
-  }
-p{
-  font-size: medium;
-}
-  .ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
 
   .card {
     position: relative;
@@ -41,29 +12,30 @@ p{
     margin-bottom: 20px;
     color: rgb(10, 10, 11);
     width: 150px;
-    height: 220px;
    margin-right: 5px;
+   box-shadow: 2px 3px 4px 2px gray;
+   height: 100%;
   }
 
-   button {
-    background-color: #f44336;
+   .button {
+    background-color: #39999e;
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 50%;
-   
+    /* border-radius: 50%; */
+   height: 10%;
     position: absolute;
     left: 0%;
     top: 0%;
   }
 
-  .card button:focus {
+  .card .button:focus {
     outline: none;
   }
 
-  .card .audience {
+  .card .discount {
     height: 20%;
-    border: 2px solid #f44336;
+    border: 2px solid #39999e;
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -86,7 +58,7 @@ p{
 
   .card .description {
     margin-top: 10px;
-    height: 40%;
+    height: 20%;
   }
 
   .card .price {
@@ -95,12 +67,23 @@ p{
   }
 
   .card .price b {
-    border: 2px solid #f44336;
+    border: 2px solid #39999e;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
+    height: 10%;
   }
 
+  .card  .discount {
+    padding: 5px 10px;
+    height: 8%;
+  }
   .card .inStock {
     margin-top: 10px;
+    height: 10%;
+  }
+
+  .card .Buuton-add {
+    margin-top: 15px;
+    height: 10%;
   }

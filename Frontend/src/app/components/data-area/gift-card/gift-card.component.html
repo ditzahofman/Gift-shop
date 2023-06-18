@@ -1,6 +1,6 @@
 <div class="card">
-  <button (click)="deleteGift()" (click)="onDelete.emit()">✖️</button>
-  <div class=" audience">{{gift.audience.name}}</div>
+  <button class="button" (click)="deleteGift()" (click)="onDelete.emit()"><b title="Delete">x</b></button>
+  <!-- <div class=" audience">{{gift.audience.name}}</div> -->
   <div class="name">
     <p class="ellipsis"><b>{{gift.name}}</b></p>
   </div>
@@ -14,4 +14,11 @@
     Units in stock:{{gift.unitsInStock}}
     {{gift.discount}}
   </div>
+  <div class="discount">
+      {{gift.discount}}%  Discount
+  </div>
+  <br/>
+  <div class="button-add">
+   <button>Add to cart</button>
 </div>
+  </div>
